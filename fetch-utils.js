@@ -13,3 +13,20 @@ export async function getPosts() {
     return checkError(resp);
 }
 // console.log('hello', await getPosts())
+//signup user
+export async function upUser(email, password) {
+    const resp = await client.auth.signUp({ email, password });
+    console.log(resp);
+    return checkError(resp);
+}
+//sign-in user
+export async function inUser(email, password) {
+    const { user, session, error } = await client.auth.signIn({ email, password });
+    return checkError({ user, session, error });
+}
+
+//getUser
+
+//check for auth(checkAuth())
+
+//logout
