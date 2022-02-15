@@ -29,7 +29,7 @@ window.addEventListener('load', async () => {
 //do NOT use replace function here, IT WILL LOOP FOREVER.
 // loggedInReplace();
 createPost.addEventListener('click', () => {
-    
+    location.replace(`./create-post/index.html`);
 });
 // get user input
 

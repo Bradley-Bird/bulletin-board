@@ -31,6 +31,14 @@ export async function getUser() {
 }
 
 //check for auth(checkAuth())
+export async function checkAuth() {
+    const user = await getUser();
+    if (!user) {
+        location.replace('/');
+        // console.log(user);
+        return user;
+    }
+}
 
 //logout
 export async function logout() {
@@ -43,4 +51,10 @@ export async function loggedInReplace() {
     if (await getUser()) {
         location.replace(`/`);
     }
+}
+
+//insert row function
+export async function pushPost(post) {
+    const resp = await client.from('bulletin-board').insert(post);
+    checkError(resp);
 }
