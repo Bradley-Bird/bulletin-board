@@ -11,3 +11,4 @@ export function renderBoard(board) {
     div.append(h2, p, contact);
     return div;
 }
+

@@ -12,4 +12,4 @@ export async function getPosts() {
     console.log(resp);
     return checkError(resp);
 }
-console.log('hello', await getPosts());
+// console.log('hello', await getPosts())
