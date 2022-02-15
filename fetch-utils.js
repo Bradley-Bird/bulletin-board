@@ -26,7 +26,17 @@ export async function inUser(email, password) {
 }
 
 //getUser
+export async function getUser() {
+    return client.auth.session() && client.auth.session().user;
+}
 
 //check for auth(checkAuth())
 
 //logout
+
+//login .replace
+export async function loggedInReplace() {
+    if (await getUser()) {
+        location.replace(`/`);
+    }
+}
