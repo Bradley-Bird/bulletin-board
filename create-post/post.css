@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px black solid;
+    height: 100vh;
+    background-color: rgb(70, 58, 58);
+    color: goldenrod;
+}
+
+.container-post, #post {
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    padding: 20px;
+    margin: 20px;
+}
+
+#post-submit {
+    height: 400px;
+    text-overflow: wrap;
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    background-color: rgb(85, 80, 73);
+    color: azure;
+    font-size: larger;
+}

@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0">
     <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="./post.css">
     <title>Create-Post</title>
 </head>
+
 <body>
     <main>
-        <section>
-            <form ><label for=""><input type="text"><button></button></input></label></form>
+        <section class="container-post">
+            <form id="post">
+                <h2>List Your Event!</h2>
+                <label>Title</label><input type="text" name="title" id="title-submit" />
+                <label>Post</label> <input type="text" name="post" id="post-submit" />
+                <label>Contact</label><input type="text" name="contact" id="contact-submit" />
+            </form>
         </section>
     </main>
 </body>
+
 </html>
