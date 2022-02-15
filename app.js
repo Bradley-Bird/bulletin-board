@@ -1,4 +1,4 @@
-import { getPosts } from './fetch-utils.js';
+import { getPosts, getUser, logout } from './fetch-utils.js';
 import { renderBoard } from './utils.js';
 
 // import functions and grab DOM elements
@@ -14,13 +14,19 @@ window.addEventListener('load', async () => {
         const postEl = renderBoard(post);
         board.append(postEl);
     }
-    return board;
-});
+    const user = await getUser();
 
-logButton.addEventListener('click', () => {
-    location.replace(`./auth-page/index.html`);
+    if (user) {
+        logButton.addEventListener('click', logout);
+    } else {
+        logButton.textContent = `Login`;
+        logButton.addEventListener('click', () => {
+            location.replace(`./auth-page/index.html`);
+        });
+    }
 });
-
+//do NOT use replace function here, IT WILL LOOP FOREVER.
+// loggedInReplace();
 // get user input
 
 // use user input to update state

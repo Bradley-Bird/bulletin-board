@@ -33,6 +33,10 @@ export async function getUser() {
 //check for auth(checkAuth())
 
 //logout
+export async function logout() {
+    await client.auth.signOut();
+    location.replace('/');
+}
 
 //login .replace
 export async function loggedInReplace() {
