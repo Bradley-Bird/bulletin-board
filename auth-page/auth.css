@@ -1,14 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(70, 58, 58);
+    height: 100vh;
+    color: goldenrod;
 }
-.container-in, .container-up{
+
+.container-in, .container-up {
     clear: both;
     border: black 2px solid;
     padding: 10px;
     margin: 30px;
 }
+
 .container-in {
     position: relative;
     /* margin-left: 50%; */

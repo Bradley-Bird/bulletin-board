@@ -3,7 +3,7 @@ import { renderBoard } from './utils.js';
 
 // import functions and grab DOM elements
 const logButton = document.getElementById('logButton');
-)
+
 const board = document.getElementById('board');
 // let state
 // set event listeners
@@ -17,6 +17,11 @@ window.addEventListener('load', async () => {
     return board;
 });
 
+logButton.addEventListener('click', () => {
+    location.replace(`./auth-page/index.html`);
+});
+
 // get user input
+
 // use user input to update state
 // update DOM to reflect the new state
