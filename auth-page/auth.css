@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-in, .container-up{
+    clear: both;
+    border: black 2px solid;
+    padding: 10px;
+    margin: 30px;
+}
+.container-in {
+    position: relative;
+    /* margin-left: 50%; */
+    clear: both;
+    border: black 2px solid;
+    padding: 10px;
+    margin: 30px;
+
+}
+
+.container-up {
+    position: relative;
+    float: inline-end;
+}
