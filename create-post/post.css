@@ -11,7 +11,7 @@ main {
     border: 2px black solid;
     height: 100vh;
     background-color: rgb(70, 58, 58);
-    color: goldenrod;
+    color: rgb(26, 24, 22);
 }
 
 .container-post, #post {
@@ -23,15 +23,19 @@ main {
 }
 
 #post-submit {
-    height: 400px;
+    height: 100px;
     text-overflow: wrap;
+}
+
+#post {
+    background-color: rgba(218, 165, 32, .5);
 }
 
 input {
     height: 30px;
     width: 400px;
     text-align: center;
-    background-color: rgb(85, 80, 73);
+    background-color: rgba(85, 80, 73, .8);
     color: azure;
     font-size: larger;
 }
@@ -45,10 +49,11 @@ header {
     text-align: center;
     border-bottom: .2em black solid;
     z-index: 2;
-    background-color: blanchedalmond;
+    background-color: rgb(228, 219, 94);
     /* margin-bottom: 1em; */
 
 }
+
 footer {
     position: fixed;
     padding: 10px 10px 0px 10px;
@@ -57,4 +62,10 @@ footer {
     height: 3em;
     background: grey;
     z-index: 2;
+}
+
+.bg {
+    background: url(../assets/create-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
