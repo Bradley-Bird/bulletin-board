@@ -8,6 +8,8 @@ const upForm = document.getElementById('sign-up');
 const upEmail = document.getElementById('sign-up-email');
 const upPassword = document.getElementById('sign-up-password');
 
+const homeBtn = document.getElementById('home');
+
 upForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     console.log(upEmail.value, upPassword.value, 'hello');
@@ -23,3 +25,9 @@ inForm.addEventListener('submit', async (e) => {
     loggedInReplace();
 });
 loggedInReplace();
+
+homeBtn.addEventListener('click', () => {
+    loggedInReplace();
+    location.replace(`/`);
+    console.log('click');
+});

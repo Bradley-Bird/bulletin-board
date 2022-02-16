@@ -54,7 +54,7 @@ body {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
 
     #board {
         position: relative;
@@ -74,6 +74,7 @@ body {
     }
 }
 
+/* 
 @media (min-width: 64em) {
     #board {
         margin: 0 30px;
@@ -94,30 +95,31 @@ body {
         padding: 0 10em;
     }
 
-}
+} */
 
-@media (max-width:900px) {
+@media (max-width:1000px) {
     .post {
         justify-content: center;
         align-items: center;
-        /* width: 75vw; */
-        margin: 0 2%;
+        width: 75vw;
+        /* margin: 0 2%; */
     }
 }
 
 .post {
     text-align: center;
-    background-color: goldenrod;
+    background-color: rgba(218, 165, 32,.8);
     height: 15em;
     /* width: 75%; */
-    margin: 0% 4%;
+    margin: 10px 10px;
     border: black solid 2px;
+    border-radius: 15px;
     contain: content;
     z-index: 1;
 
 }
 
-@media (min-width: 64em) {
+/* @media (min-width: 64em) {
     .post {
         margin: 40% 30px;
     }
@@ -133,7 +135,7 @@ body {
     .post {
         margin: 90px 90px;
     }
-}
+} */
 
 header {
     position: fixed;
@@ -144,7 +146,8 @@ header {
     text-align: center;
     border-bottom: .2em black solid;
     z-index: 2;
-    background-color: blanchedalmond;
+    background-color: rgb(55, 41, 116);
+    color: aqua;
     /* margin-bottom: 1em; */
 
 }
@@ -165,3 +168,9 @@ footer {
     justify-content: center;
     align-items: center;
 } */
+
+.bg {
+    background: url(../assets/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
