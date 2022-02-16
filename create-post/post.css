@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px black solid;
+    height: 100vh;
+    background-color: rgb(70, 58, 58);
+    color: rgb(26, 24, 22);
+}
+
+.container-post, #post {
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    padding: 20px;
+    margin: 20px;
+}
+
+#post-submit {
+    height: 100px;
+    text-overflow: wrap;
+}
+
+#post {
+    background-color: rgba(218, 165, 32, .5);
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    background-color: rgba(85, 80, 73, .8);
+    color: azure;
+    font-size: larger;
+}
+
+header {
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    height: 5em;
+    top: 0;
+    text-align: center;
+    border-bottom: .2em black solid;
+    z-index: 2;
+    background-color: rgb(228, 219, 94);
+    /* margin-bottom: 1em; */
+
+}
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    background: grey;
+    z-index: 2;
+}
+
+.bg {
+    background: url(../assets/create-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
