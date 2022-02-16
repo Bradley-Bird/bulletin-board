@@ -156,6 +156,7 @@ footer {
     width: 100%;
     height: 3em;
     background: grey;
+    z-index: 2;
 }
 
 /* main {
